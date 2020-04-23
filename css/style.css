@@ -1,0 +1,839 @@
+/* Common CSS Starts Here */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a:hover { text-decoration: none }
+a:focus { outline: 0 solid; text-decoration: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #323232;
+}
+p:last-child {
+    margin-bottom: 0
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+.btn {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto Slab";
+    background-color: #00b894;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 12px 60px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border: 1px solid transparent;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    transition: 1s;
+}
+.btn:hover{
+  color: #00b894;
+}
+.btn:hover::before {
+  top: -180%;
+}
+.btn.slider-btn-dark:before{
+  border-radius: 0 0 50% 50%;
+  top: -10%;
+  bottom: 100%;
+}
+.btn.slider-btn-dark:hover::before {
+  bottom: -180%;
+}
+.section-padding{
+    padding: 150px 0px;
+}
+.section-title {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+}
+.section-title h2 {
+    font-size: 48px;
+    margin: 0 0 60px;
+    text-transform: capitalize;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+}
+.section-title h2:after {
+    position: absolute;
+    content: "";
+    background: rgba(0,184,148,0.20);
+    left: 0;
+    right: 0; 
+    top: 75%;
+    bottom: 0;
+    z-index: -1;
+}
+.section-title-double-ln h2{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.section-title-double-ln h2:after {
+    position: absolute;
+    content: "";
+    background: rgba(0,184,148,0.20);
+    left: 0;
+    right: 0; 
+    top: 85%;
+    bottom: 0;
+    z-index: -1;
+}
+.section-title-single-ln h2{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.section-title-single-ln h2:after {
+    position: absolute;
+    content: "";
+    background: rgba(0,184,148,0.20);
+    left: 0;
+    right: 0; 
+    top: 75%;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* ==========================================================
+================ Header Area CSS Starts Here ================
+========================================================== */
+.header-area {
+    background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.header-top {
+    position: relative;
+    width: 100%;
+    z-index: 9 !important;
+}
+.sticky-nav{
+    position: fixed;
+    background: #34495e;
+    z-index: 9 !important;
+}
+.menubar {
+    width: 100%;
+    margin: 20px 0;
+}
+.logo {}
+.logo img {
+    display: block;
+}
+.menubar .navbar{
+    padding: 0;
+}
+.menubar .navbar-brand{
+    padding: 0;
+    margin: 0;
+}
+.navbar-dark .navbar-toggler {
+    border: 1px solid #fff;
+}
+.navbar-toggle-icon {
+    background: #fff;
+    height: 3px;
+    width: 30px;
+    display: block;
+    margin: 5px 0 5px;
+}
+.main-menu{}
+.main-menu .nav-link.active {
+    color: #fefeff !important;
+    background-color: #00b894;
+}
+.main-menu ul li.nav-item a:hover{
+    color: #fefeff !important;
+    background-color: #00b894;
+}
+.main-menu ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.main-menu ul li.nav-item a.nav-link {
+    padding: 7px 30px !important;
+    display: block;
+    font-size: 14px;
+    color: #323232;
+    text-transform: capitalize;
+    font-family: Roboto Slab;
+}
+/* Header Slider CSS Here */
+.header-slider{}
+.slider-col{
+    padding: 0;
+}
+.slider-content {
+    padding: 250px 0;
+}
+.slider-content h4 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 30px;
+}
+.slider-content h4 span {
+    color: #00b894;
+}
+.slider-content h1 {
+    font-size: 40px;
+    margin: 0 0 50px;
+    text-transform: capitalize;
+}
+.slider-content p {
+    color: #707070;
+    margin: 0 0 50px;
+    line-height: 30px;
+}
+.slider-btn{
+    margin: 0 15px 0 0;
+}
+.slider-btn-dark {
+    background-color: #323232;
+    margin: 0 0 0 15px;
+}
+.no-padding{
+    padding: 0 !important;
+}
+/* ============================================================
+================ About Section CSS Starts Here ================
+============================================================ */
+.about-section{}
+.about-left-content{}
+.about-left-content h3 {
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 40px;
+}
+.about-left-content h3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: #00b894;
+    height: 2px;
+    width: 50px;
+}
+.about-left-content h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    line-height: 50px;
+    margin: 0 0 50px;
+}
+.about-left-content p {
+    color: #707070;
+    line-height: 28px;
+    font-size: 15px;
+}
+.about-right-content {
+    display: flex;
+    justify-content: center;
+}
+.single-aboutright-item {
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 60px 25px;
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+}
+.single-aboutright-item h4 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 28px;
+}
+.single-aboutright-item p{}
+.single-aboutright-item:nth-child(1) {
+    background-color: #be2edd;
+    margin-right: -90px;
+
+}
+.single-aboutright-item:nth-child(2) {
+    background-color: #ff7675;
+    margin: 140px 0 0;
+    z-index: 1;
+}
+.single-aboutright-item:nth-child(3){
+    background-color: #f9ca24;
+    margin-left: -90px;
+
+}
+/* ==============================================================
+================ Service Section CSS Starts Here ================
+============================================================== */
+.service-section{
+    background-color: #f5f6fb;
+}
+.single-service-item {
+    background-color: #fff;
+    padding: 60px 40px;
+    margin: 15px 0px;
+    transition: .5s;
+}
+.single-service-item i {
+    font-size: 40px;
+    margin: 0 0 25px;
+}
+.single-service-item h4 {
+    font-size: 20px;
+    margin: 0 0 25px;
+}
+.single-service-item p {
+    color: #707070;
+    font-size: 15px;
+    line-height: 28px;
+}
+.single-service-item .graphic-icon{
+    color: #f9ca24;
+}
+.single-service-item .seo-icon{
+    color: #be2edd;
+}
+.single-service-item .data-icon{
+    color: #e66d6d;
+}
+.single-service-item .marketing-icon{
+    color: #6ab04c;
+}
+.single-service-item .video-icon{
+    color: #31acb8;
+}
+.single-service-item .photography-icon{
+    color: #4834d4;
+}
+.single-service-item:hover {
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 3px #000;
+}
+/* ==============================================================
+================= Skill Section CSS Starts Here =================
+============================================================== */
+.skill-section{
+    background-color: #00b894;
+}
+.skill-sec-title h2{
+    color: #fff;
+}
+.skill-progressbar{}
+.single-progressbar {
+    margin-bottom: 60px;
+}
+.progress-title {
+    color: #fff;
+    font-family: Roboto Slab;
+    margin: 0 0 15px;
+    display: inline-block;
+}
+.progress {
+    background-color: #4dcdb4;
+    border-radius: 0;
+    position: relative;
+    height: 5px;
+    overflow: visible;
+}
+.progress-bar {
+    background-color: #fff;
+    border-radius: 0;
+    position: relative;
+    height: 5px;
+    left: 0;
+    animation: skillbaranimation 2s linear;
+    position: relative;
+}
+.progress-bar:after {
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    right: 0;
+}
+@keyframes skillbaranimation{
+    0%{
+        width: 0%;
+    }
+}
+.progress-text{
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 100%;
+    margin-bottom: 15px;
+    font-family: Roboto Slab;
+    font-size: 16px;
+    color: #fff;
+}
+/* ==================================================================
+================= Portfolio Section CSS Starts Here =================
+================================================================== */
+.portfolio-section{}
+.portfolio-sec-title{}
+.portfolio-sec-title h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    margin: 0 0 40px;
+}
+.portfolio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+}
+.portfolio-buttons button {
+    background: transparent;
+    border: none;
+    text-transform: capitalize;
+    color: #707070;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Roboto Slab;
+}
+.portfolio-buttons button:first-child{
+    padding-left: 0;
+}
+.portfolio-buttons button:hover{
+    color: #00b894;
+}
+.portfolio-buttons .mixitup-control-active {
+    color: #00b894;
+}
+.portfolio-contents {
+    margin-bottom: 50px;
+}
+.single-portfolio-item{
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.single-portfolio-item img{
+    display: block;
+    max-width: 100%;
+}
+.single-portfolio-item:hover .portfolio-overlay{
+    top: 0;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.portfolio-overlay {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: 0;
+    background-color: rgba(230,109,109,0.9);
+    transition: all .5s ease;
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+.portfolio-overlay a{
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio-overlay h4 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 0 3px;
+}
+.portfolio-overlay span {
+    font-size: 14px;
+    font-family: Roboto Slab;
+}
+.portfolio-overlay p {
+    margin: 20px 0 0;
+    line-height: 28px;
+    font-size: 15px;
+}
+.portfolio-overlay-rating{}
+.portfolio-overlay-rating p {
+    font-family: Roboto Slab;
+    font-size: 14px;
+}
+.portfolio-overlay-rating i{}
+.portfolio-button {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+}
+/* ==================================================================
+================ Testimonial Section CSS Starts Here ================
+================================================================== */
+.testimonial-section{
+    background-color: #fff;
+}
+.single-testimonial-item {
+    margin: 30px 0 20px;
+    border: 1px solid #e5e5e5;
+    padding: 60px 40px;
+    background: #fff;
+    transition: .5s;
+}
+.single-testimonial-item:hover {
+    box-shadow: 0px 0px 10px #707070;
+}
+.testimonial-quote-img img{
+    transition: .5s;
+}
+.single-testimonial-item:hover .testimonial-quote-img img{
+    transform: rotate(180deg);
+}
+.single-testimonial-item img {
+    margin: 0 0 30px;
+}
+.single-testimonial-item p {
+    color: #707070;
+    line-height: 30px;
+}
+.testimonial-client-details {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 0;
+}
+.testimonial-client-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+.testimonial-client-title h4 {
+    color: #707070;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+}
+.testimonial-client-title span {
+    color: #707070;
+    font-size: 15px;
+    font-family: Roboto Slab;
+}
+.testimonial-client-sign {
+    margin-left: auto;
+}
+.testimonial-client-sign img {
+    margin: 0;
+}
+/* ==================================================================
+================== Contact Section CSS Starts Here ==================
+================================================================== */
+.contact-section {
+    position: relative;
+    background-image: url(../img/contact-bg.jpg);
+    background-size: 44% 100%;
+    background-repeat: no-repeat;
+}
+.contact-left-img{}
+.contact-left-img img{}
+
+.contact-right-content {
+    padding: 70px 0;
+}
+.contact-right-content h3 {
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 25px;
+}
+.contact-right-content h3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: #00b894;
+    height: 2px;
+    width: 50px;
+}
+.contact-right-content h2 {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 0 0 50px;
+}
+.contact-form {
+    margin: 10px 0 0;
+    display: inline-block;
+}
+.contact-form input{}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 20px;
+    border: 1px solid #e5e5e5;
+}
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #00b894;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #707070;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+.contact-btn {
+    font-family: PT Sans;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 40px;
+    margin: 15px 0 0;
+}
+/* ===================================================================
+==================== Blog Section CSS Starts Here ====================
+=================================================================== */
+.blog-section{}
+.single-blog-item{
+    box-shadow: 2px 2px 2px #707070;
+    transition: .5s;
+}
+.single-blog-item:hover {
+    box-shadow: 5px 5px 5px #707070;
+}
+.single-blog-content {
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    padding: 20px 20px 30px;
+    color: #707070;
+}
+.blog-author-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+.blog-author-details a{
+    color: #707070;
+}
+.blog-author-details a:hover{
+    color: #00b894;
+}
+.blog-author-details .blog-author {}
+.blog-author-details .blog-date {}
+.blog-text-content{}
+.blog-text-content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.blog-text-content p {
+    font-size: 15px;
+    line-height: 28px;
+    margin: 0 0 25px;
+}
+.blog-text-content a {
+    color: #707070;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.blog-text-content a:hover {
+    color: #00b894;
+    font-weight: 700;
+}
+/* ==================================================================
+================== Company Section CSS Starts Here ==================
+================================================================== */
+.company-section{}
+.company-logo-content {
+    display: flex;
+    justify-content: space-between;
+}
+.company-logo-content img{
+    align-self: center;
+}
+/* =====================================================================
+==================== Footer Section CSS Starts Here ====================
+===================================================================== */
+.footer-section{
+    background-color: #f5f6fb;
+    border-bottom: 1px solid #dcdde1;
+    color: #707070;
+}
+.footer-widget{}
+.footer-widget-1 img {
+    margin: 0 0 30px;
+}
+.footer-widget-1 p {
+    font-size: 15px;
+    line-height: 28px;
+}
+.footer-widget h5 {
+    font-size: 16px;
+    line-height: 30px;
+}
+.footer-widget ul li{}
+.footer-widget ul li a {
+    color: #707070;
+    font-size: 14px;
+    line-height: 34px;
+}
+.footer-widget ul li a:hover{
+    color: #00b894;
+}
+.footer-subscribe-form{
+    display: flex;
+}
+.footer-subscribe-form input {
+    border: 1px solid #dcdde1;
+    border-right: 0;
+    padding: 5px 15px;
+    max-width: 200px;
+    width: 100%;
+}
+.footer-subscribe-form input:hover,
+.footer-subscribe-form input:focus{
+    border-color: #00b894;
+}
+input::placeholder{
+    color: #707070;
+    font-size: 14px;
+    line-height: 34px;
+}
+.footer-subscribe-form i {
+    background-color: #00b894;
+    color: #f5f6fb;
+    font-size: 15px;
+    padding: 10px;
+}
+/* Footer Bottom Area CSS Here */
+.footer-bottom-area {
+    background-color: #f5f6fb;
+    padding: 20px 0;
+    color: #707070;
+    font-size: 15px;
+    line-height: 28px;
+}
+.footer-bottom-left{}
+.footer-bottom-left p {
+    display: inline-block;
+}
+.footer-bottom-right{
+    text-align: right;
+}
+.footer-bottom-right p {
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-bottom-right ul{
+    display: inline;
+}
+.footer-bottom-right ul li{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Scroll To Top Area CSS Here */
+.scrolltopsec {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #34495e;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    z-index: 99;
+    opacity: 0;
+}
+.scrolltop{
+    color: #fff;
+    font-size: 40px;
+}
+.scrolltopsec:hover{
+    background: #ff0000;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.scrolltopsec:hover .scrolltop{
+    color: #fff;
+}
